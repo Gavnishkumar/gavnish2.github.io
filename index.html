@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Notes</title>
+    <link rel="stylesheet" href="adding notes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <navbar id="nav">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Gavnish" srcset="">
+            <p><strong>Gavnish kumar</strong></p>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="item" id="item1"><a href="index.html">project 1</a></li>
+                <li class="item" id="item2"><a href="index1.html">project 2</a></li>
+                <li class="item" id="item3"><a href="project1.html">project 3</a></li>
+                <li class="item" id="item4"><a href="project2.html">project 4</a></li>
+            </ul>
+        </div>
+        <div class="search" id="search">
+            <input type="search" name="search" id="searchtxt" placeholder="Search items">
+        </div>
+    </navbar>
+
+    <div class="container">
+        <div class="note">
+        <h2  class="element"><u>Welcome to Adding notes</u></h2>
+        <h4>please use 'Enter' or line break to show good quality</h4>
+        <label for="note" class="element">Add a note </label>
+        <textarea name="note" id="addtxt" cols="30" rows="10" placeholder="Enter your note"></textarea>
+        <button type="submit" id="addbtn">Add</button>
+    </div>
+</div>
+<div class="allnote">
+<h1>your all notes</h1>
+<hr>
+<div id="notes" class="box"></div>
+</div>
+
+<script src="addingnote.js"></script>
+</body>
+</html>

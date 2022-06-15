@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="adding notes.css"> -->
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+          
+        }
+        .logo{
+    display: flex;
+    flex-direction: column;
+}
+.logo img{
+    border-radius: 34px;
+    height: 66px;
+    width: 66px;
+    margin-left: 23px;
+}
+.logo p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+}
+#nav{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+   
+    width:100%;
+    display: flex;
+    align-items: center;
+    height:100px;
+    background-color: #d3cef1;
+    z-index: 1;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+.item{
+    padding: 6px 19px;
+        font-size: 23px;
+    font-weight: bolder;
+    margin:15px;
+}
+.item:hover{
+ 
+    border-radius: 7px;
+    background-color: #efd6db
+}
+.item a{
+    color:black;
+    text-decoration: none;
+}
+.search{
+    position:absolute;
+    float: right;
+    right:50px;
+    overflow: hidden;
+}
+#searchtxt{
+    height: 30px;
+    border-radius:3px;
+    padding-left:10px;
+}
+     
+        .navbar{
+            background-color: rgb(136, 136, 201);
+            display: flex;
+        }
+        marquee{
+            color:white;
+            font-weight:bolder;
+            font-size: 19px;
+            background-color: black;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+
+        }
+        li{
+            margin:23px;
+            padding: 12px;
+            border:2px solid black;
+            border-radius: 13px;  
+        }
+        li:hover{
+            background-color: aqua;
+            font-size: 23px;
+            font-weight: bold;
+        }
+        body::selection {
+            z-index: 23;
+  color: red;
+  background: yellow;
+}
+img{
+    position:relative;
+    top:10px;
+    height:73px;
+    width:73px;
+    border-radius: 54px;
+}
+.container{
+    background-image: url("https://image.shutterstock.com/image-photo/web-development-coding-programming-internet-260nw-1141706672.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+      margin-top:0px;
+    width: 100%;
+    height:800px;
+}
+p{
+    font-size: 23px;
+    color:white;
+}
+p::first-letter{
+    font-size: 23px;
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    
+}
+.box1{
+    background-color: rgb(93, 93, 151);
+    margin:12px;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box1 p{
+    margin-top:23px;
+}
+.box1 img{
+    height:200px;
+    width: 200px;
+}
+
+.box1:hover{
+    cursor: pointer;
+    background-color: brown;
+    
+}
+    </style>
+</head>
+<body>
+    <navbar id="nav">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Gavnish" srcset="">
+            <p><strong>Gavnish kumar</strong></p>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="item" id="item1"><a href="addingnote.html">project 1</a></li>
+                <li class="item" id="item2"><a href="index1.html">project 2</a></li>
+                <li class="item" id="item3"><a href="project1.html">project 3</a></li>
+                <li class="item" id="item4"><a href="project2.html">project 4</a></li>
+            </ul>
+        </div>
+        <div class="search" id="search">
+            <input type="search" name="search" id="searchtxt" placeholder="Search items">
+        </div>
+    </navbar>
+    <nav class="navbar">
+        <img src="https://www.qapla.it/wp-content/uploads/2020/07/logocert-webdev.png" alt="" srcset="">
+        <ul class="navelement">
+            <li class="items"><strong>Web designing</strong></li>
+            <li class="items">syllabus</li>
+            <li class="items">projects</li>
+            <li class="items">contact</li>
+        </ul> 
+    </nav>
+    <div class="marquee">
+        <marquee behavior="left" direction="">Contact to <i><u>9368985917</u></i> to made a website</marquee>
+    </div>
+    <div class="container">
+        <p>This is amazing and interseting field to applied their coding skills.and i am suggesting you all to learn if you have you interest only it is to difficult also and too easy also.</p>
+        <div class="box">
+            <div class="box1">
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210203170945/HTML-Tutorials.png" alt="HTML tutorial" srcset="">
+                <p>This is best tutorial for HTMl</p>
+            </div>
+            <div class="box1">
+                <img src="https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667" alt="CSS tutorial" srcset="">
+                <p>This is best css tutorial</p>
+            </div>
+            <div class="box1">
+                <img src="https://res.cloudinary.com/teepublic/image/private/s--y_rRiRKy--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:48/co_000000,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1539274051/production/designs/3302114_0.jpg" alt="Tutorial for js" srcset="">
+                <p>This is best js tutorial</p>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>

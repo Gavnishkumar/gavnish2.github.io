@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+   
+    <style>
+      
+
+        .container {
+            border: 2px solid black;
+            padding: 3px;
+            width: 619px;
+            display: grid;
+            grid-gap: 4px;
+            background-color: rgb(163, 163, 0);
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .item {
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #box1 {
+            background-color: rgb(240, 252, 134);
+            grid-column: 1/span 3;
+
+        }
+
+        #box3 {
+            grid-column: 2/span 2;
+        }
+
+        #box5 {
+            grid-column: 2/span 2;
+        }
+
+        #box6 {
+            height: 106px;
+            grid-row: 4/span 2;
+        }
+
+        #box7 {
+            height: 106px;
+            grid-column: 2/span 2;
+            grid-row: 4/span 2;
+
+        }
+
+        #box8 {
+            height: 156px;
+            grid-row: 6/span 2;
+        }
+
+        #box9 {
+            grid-column: 2/span 2;
+            grid-row: 6/span 2;
+            height: 156px;
+
+        }
+
+        #box11,
+        #box13,
+        #box15 {
+            grid-column: 2/span 2;
+        }
+
+        .item {
+            background-color: aqua;
+        }
+
+        input {
+            width: 60%;
+            height: 29px;
+        }
+
+        #age,
+        #photo {
+            width: 208px;
+            height: 30px;
+        }
+
+        button {
+            height: 40px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <h2>This is first project of my Assignment 6 </h2>
+    <div class="container">
+        <div class="item" id="box1">
+            <h1>Registration form</h1>
+        </div>
+        <div class="item" id="box2">
+            <label for="name">Enter your name</label>
+        </div>
+        <div class="item" id="box3">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="item" id="box4">
+            <label for="pwd">Enter your password</label>
+        </div>
+        <div class="item" id="box5">
+            <input type="password" name="pwd" id="pwd" placeholder="Enter your passoword">
+        </div>
+        <div class="item" id="box6">
+            <label for="add">Enter address</label>
+        </div>
+        <div class="item" id="box7">
+            <textarea name="add" id="add" cols="32" rows="5" placeholder="Enter your address"></textarea>
+        </div>
+        <div class="item" id="box8">
+            <label for="game"><strong>Select your game</strong></label>
+        </div>
+        <div class="item" id="box9">
+            <input type="radio" name="game" id="game">Hockey<br>
+            <input type="radio" name="game" id="game">Football<br>
+            <input type="radio" name="game" id="game">Cricket<br>
+            <input type="radio" name="game" id="game">Badminton<br>
+            <input type="radio" name="game" id="game">Volleyball<br>
+        </div>
+        <div class="item" id="box10">
+            <label for="gender">Gender</label>
+        </div>
+        <div class="item" id="box11">
+            Male<input type="radio" name="gender" id="gender">
+            Female<input type="radio" name="gender" id="gender">
+        </div>
+        <div class="item" id="box12">
+            <label for="age">Select your age</label>
+        </div>
+        <div class="item" id="box13">
+            <select name="age" id="age">
+                <option value="age">Select</option>
+                <option value="age">18</option>
+                <option value="age">19</option>
+                <option value="age">20</option>
+                <option value="age">21</option>
+                <option value="age">22</option>
+                <option value="age">23</option>
+                <option value="age">24</option>
+                <option value="age">25</option>
+                <option value="age">26</option>
+                <option value="age">27</option>
+                <option value="age">28</option>
+                <option value="age">29</option>
+                <option value="age">30</option>
+            </select>
+        </div>
+        <div class="item" id="box14">
+            <label for="photo">Upload your photo</label>
+        </div>
+        <div class="item" id="box15">
+            <input type="file" name="photo" id="photo">
+        </div>
+        <div class="item" id="box16">
+            <button>CLick me</button>
+        </div>
+        <div class="item" id="box17">
+            <button type="reset">Reset</button>
+        </div>
+        <div class="item" id="box18">
+            <button type="submit">Submit form</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

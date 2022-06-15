@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 40%;
+            background-color: rgb(170, 218, 147);
+        }
+
+        .element {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr 1.5fr);
+        }
+
+        .box {
+            font-size: 23px;
+
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        input,
+        select {
+            width: 200px;
+            height: 30px;
+        }
+
+        #gender {
+            width: 80px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        #box8,
+        #box20 {
+            font-size: 18px;
+        }
+
+        #check {
+            width: 15px;
+            height: 15px;
+        }
+
+        .head-end {
+
+            border: 2px solid black;
+            height: 53px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f19537;
+
+        }
+
+        .submit {
+            height: 30px;
+            width: 70px;
+            background-color: rgb(104, 236, 104);
+            border-radius: 5px;
+        }
+
+        .cancel {
+            height: 30px;
+            width: 70px;
+            background-color: rgb(233, 106, 106);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is my project 2 of Assignment 6</h2>
+    <div class="container">
+        <h2 class="head-end">Sign Up form</h2>
+        <div class="element">
+            <div class="box" id="box1">
+                <label for="firstname">first name</label>
+            </div>
+            <div class="box" id="box2">
+                <input type="text" name="firstname" id="firstname" placeholder="Enter first name">
+            </div>
+            <div class="box" id="box3">
+                <label for="lastname">Last name</label>
+            </div>
+            <div class="box" id="box4">
+                <input type="text" name="lastname" id="lastname" placeholder="Enter Last name">
+            </div>
+            <div class="box" id="box5">
+                <label for="dob">Date of Birth</label>
+            </div>
+            <div class="box" id="box6">
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="box" id="box7">
+                <label for="gender">Gender</label>
+            </div>
+            <div class="box" id="box8">
+                Male <input type="radio" name="gender" id="gender">
+                Female<input type="radio" name="gender" id="gender">
+            </div>
+            <div class="box" id="box9">
+                <label for="country">country</label>
+            </div>
+            <div class="box" id="box10">
+                <select name="country" id="country">
+                    <option value="country">Country</option>
+                    <option value="country">india</option>
+                    <option value="country">USA</option>
+                    <option value="country">japan</option>
+                    <option value="country">china</option>
+                    <option value="country">Russia</option>
+                    <option value="country">Pakistan</option>
+                    <option value="country">izrail</option>
+                    <option value="country">Shri Lanka</option>
+                    <option value="country">Afganistan</option>
+                    <option value="country">Bangladesh</option>
+                    <option value="country">Nepal</option>
+                    <option value="country">Ukrain</option>
+                    <option value="country">England</option>
+                </select>
+            </div>
+            <div class="box" id="box11">
+                <label for="email">Email</label>
+            </div>
+            <div class="box" id="box12">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="box" id="box13">
+                <label for="Phone">Phone</label>
+            </div>
+            <div class="box" id="box14">
+                <input type="tel" name="Phone" id="Phone" placeholder="Enter your phone number">
+            </div>
+            <div class="box" id="box15">
+                <label for="passoword">passoword</label>
+            </div>
+            <div class="box" id="box16">
+                <input type="password" name="passoword" id="passoword" placeholder="Enter your password">
+            </div>
+            <div class="box" id="box17">
+                <label for="confirm-passoword">Confirm passoword</label>
+            </div>
+            <div class="box" id="box18">
+                <input type="password" name="confirm-passoword" id="confirm-passoword"
+                    placeholder="confirm your password">
+            </div>
+            <div class="box" id="box19">
+            </div>
+            <div class="box" id="box20">
+                <input type="checkbox" name="check" id="check"><i>I agree to the term of use .</i>
+            </div>
+        </div>
+        <div class="head-end">
+            <div class="sect">
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="cancel">cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
